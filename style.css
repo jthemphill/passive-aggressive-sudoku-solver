@@ -1,0 +1,54 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+label {
+    float: right;
+    font-size: 1.4em;
+}
+
+input {
+    text-align: center;
+}
+
+#settings {
+    float: right;
+}
+
+#settings ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#settings li {
+}
+
+#settings input {
+    font-size: 1.4em;
+    width: 2em;
+}
+
+#sudokuGrid {
+    border-collapse: collapse;
+    border: solid thick;
+}
+
+#sudokuGrid colgroup, #sudokuGrid tbody {
+    border: solid thick;
+}
+
+#sudokuGrid td {
+    border: solid thin;
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+
+#sudokuGrid td input {
+    font-size: 4em;
+    height: 1em;
+    width: 1em;
+}

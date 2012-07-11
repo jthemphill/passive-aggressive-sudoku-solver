@@ -25,3 +25,7 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+# Compiled JavaScript output
+concatenated.js
+compiled.js

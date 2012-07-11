@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>Passive-Aggressive Sudoku Solver</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="../lib/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="compiled.js"></script>
+  </head>
+  <body>
+    <section id="header">
+      <h1>
+        Passive-Aggressive Sudoku Solver
+      </h1>
+    </section>
+    <section id="noscript">
+      <p>
+          This site is an exercise in modern web programming techniques, and
+          as such I am not planning to make a non-JavaScript version of this
+          page. Sorry!
+      </p>
+    </section>
+    <fieldset id="settings">
+      <ol>
+        <li>
+          <label> Group Size:
+            <input id="groupSizeInput"
+                   type="number"
+                   name="Group Size"
+                   min="1"
+                   max="35"
+                   value="9">
+          </label>
+        </li>
+        <li>
+          <label> Box Width:
+            <input id="boxWidthInput"
+                   type="number"
+                   name="Box Width"
+                   min="1"
+                   max="35"
+                   value="3">
+          </label>
+        </li>
+        <li>
+          <label> Box Height:
+            <input id="boxHeightInput"
+                   type="number"
+                   name="Box Height"
+                   min="1"
+                   max="35"
+                   value="3">
+          </label>
+        </li>
+      </ol>
+    </fieldset>
+    <section>
+      <table id="sudokuGrid" onload="render()">
+      </table>
+    </section>
+    <section id="source">
+      <a href="src">
+        Source code may be found here.
+      </a>
+    </section>
+  </body>
+</html>
