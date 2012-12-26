@@ -317,9 +317,12 @@ class SudokuMatrix:
         x = self.candidates[row * self.n**2 + col * self.n + num]
         x.choose(self)
 
-    def solve(self, solutions=[], depth=0):
+    def solve(self, solutions=None, depth=0):
         """Solve the puzzle and call self.__solution_found()."""
         
+        if solutions == None:
+            solutions = []
+
         # Base Case: backtrack to start if no more solutions are desired.
         if self.numSols <= 0:
             self.backtrack()
